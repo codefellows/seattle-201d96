@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Oswald:wght@200;400;700&display=swap');
+
+h1 {
+  font-family: 'Lobster', cursive;
+  font-weight: bolder;
+  /* color: rgb(100, 255, 200); */
+  /* background: linear-gradient(red, blue); */
+  /* color: blanchedalmond; */
+  /* color: hsl(165, 70%, 46%); */
+  color: #2b04ee;
+  border: thin solid rgb(255, 0, 204);
+}
+
+header h1 {
+  color:rgb(255, 0, 204);
+}
+
+/* selects any direct children */
+header > h1 {
+  background-color: blue;
+}
+
+
+/* a "siblin" tag, that is directly after the header tag */
+header + p {
+  color: red;
+}
+
+header > p {
+  color: yellow;
+}
+
+/* selects h2, as long as there is header somewhere above it */
+header ~ h2 {
+  color: gold;
+}
+
+p {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 700;
+}
+
+/* selects an element that the mouse is hoving over */
+p:hover {
+  color: blueviolet;
+}
+
+p:active {
+  color: silver;
+}
+
+p:nth-child(2) {
+  color: purple;
+}
