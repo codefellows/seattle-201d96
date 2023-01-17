@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Tables</title>
+  <style>
+    thead {
+      background-color: red;
+    }
+
+    tfoot th {
+      text-align: left;
+    }
+  </style>
+</head>
+<body>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Column 1</th>
+        <th>Column 2</th>
+        <th>Column 3</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th>Name 1</th>
+        <td>C 1 R 1</td>
+        <td>C 2 R 1</td>
+        <td>C 3 R 1</td>
+      </tr>
+      <tr>
+        <th>Name 2</th>
+        <td>C 1 R 2</td>
+        <td>C 2 R2</td>
+        <td>C 3 R 2</td>
+      </tr>
+      <tr>
+        <th>Name 3 </th>
+        <td>C 1 R 3</td>
+        <td>C 2 R 3</td>
+        <td>C 3 R 3</td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+        <th>Name Final</th>
+        <th>C 1 R 4</th>
+        <th>C 2 R 4</th>
+        <th>C 3 R 4</th>
+      </tr>
+    </tfoot>
+  </table>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Abilities</th>
+      </tr>
+    </thead>
+    <tbody id="pokedex">
+
+    </tbody>
+  </table>
+
+  <script src="js/app.js"></script>
+  <script>
+
+    // let pokedex = [];
+
+    // by convention, these are capitalized. 
+    // function Pokemon(name, type, abilities) {
+    //   // inside a constructor function "this" refers to the object that will be created by the function
+    //   this.name = name;
+    //   this.type = type;
+    //   this.abilities = abilities;
+    //   // not preferred
+    //   // this.speak = function () {
+    //   //   console.log(this.name);
+    //   // }
+    // }
+    // // Put things on the prototype that all pokemon can share.
+    // Pokemon.prototype.speak = function() {
+    //   console.log(this.name.toUpperCase() + '!!!!');
+    // }
+    // Pokemon.prototype.healthPoints = 100;
+
+
+    // // "new" keyword actives constructor powers.
+    // pokedex.push(new Pokemon('pikachu', 'grass', ['electrocute', 'quick-attack']));
+    // pokedex.push(new Pokemon('bulbasaur', 'grass', ['vine wipe', 'solar beam']));
+    // pokedex.push(new Pokemon('charmander', 'fire', ['ember']));
+    // console.log(pokedex);
+    // pokedex[1].speak();
+
+    // Prototypal inheritance: every object from a constructor shares or "inherits" a built in object.
+  </script>
+</body>
+</html>
