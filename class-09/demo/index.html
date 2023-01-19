@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Forms</title>
+</head>
+<body>
+  <header>
+    <h1>HTMl Forms</h1>
+  </header>
+  <main>
+    <!-- Make sure to wrap your inputs in a Form element -->
+    <form id="pokemon-form">
+      <fieldset>
+        <legend>Create a Pokemon</legend>
+        <div>
+          <label for="pokemonName">Pokemon Name</label>
+          <input id="pokemonName" type="text" name="pokemonName" placeholder="Pikachu"/>
+        </div>
+        <div>
+          <label for="type">Pokemon Type</label>
+          <select id="type" name="type">
+            <option value="grass">Grass</option>
+            <option value="rock">Rock</option>
+            <option value="electric">Electric</option>
+            <option value="water">Water</option>
+            <option value="fire">Fire</option>
+          </select>
+        </div>
+        <div>
+          <label for="ability">Abilities: <span id="abilities-list"></span></label>
+          <input type="text" id="ability" name="ability" placeholder="Thunder Bolt"/>
+          <input id="add-ability" type="button" value="Add Ability"/>
+        </div>
+        <div>
+          <label for="evolved">Has Evolved</label>
+          <input type="radio" id="evolved" value="hasEvolved" name="evolved"/>
+        </div>
+        <button type="submit">Create Pokemon</button>
+        <!-- <button>
+          <a href="#">Some Link Text</a>
+        </button> -->
+      </fieldset>
+    </form>
+    <section id="pokedex">
+      <!-- 
+        <div class="pokemon">
+          <h3>NAME</h3>
+          <p>TYPE</p>
+          <ul>
+            <li>ABILITY</li>
+          </ul>
+        </div>
+       -->
+    </section>
+  </main>
+  <script src="js/forms.js"></script>
+  <script src="js/pokemonForm.js"></script>
+</body>
+</html>
