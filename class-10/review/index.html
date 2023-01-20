@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <section>
+    <table id="storeSalesData">
+      <thead id="tableHead">
+      </thead>
+      <tbody id="tableBody">
+      </tbody>
+      <tfoot id="tableFoot">
+      </tfoot>
+    </table>
+  </section>
+  <section>
+    <form id="newStoreForm">
+      <fieldset>
+        <legend>New Store Form</legend>
+        <div>
+          <input id="storeLocation" name="storeLocation" type="text" placeholder="Choose a city" />
+          <label for="storeLocation">Store Location</label>
+        </div>
+        <div>
+          <input id="minCustomers" name="minCustomers" type="number" />
+          <label for="minCustomers">Min. Customers</label>
+        </div>
+        <div>
+          <input id="maxCustomers" name="maxCustomers" type="number" />
+          <label for="maxCustomers">Max Customers</label>
+        </div>
+        <div>
+          <input id="avgCookies" name="avgCookies" type="number" step="0.1" />
+          <label for="avgCookies">Avg. Cookies</label>
+        </div>
+        <button type="submit">Add Store</button>
+      </fieldset>
+    </form>
+  </section>
+  <script src="js/app.js"></script>
+</body>
+</html>
