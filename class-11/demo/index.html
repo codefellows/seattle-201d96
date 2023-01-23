@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Audio and Video</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/grid.css">
+</head>
+<body>
+  <header>
+    <h1>HTML Audio and Video!</h1>
+  </header>
+  <!-- both audio and video elements use the "src" attribute to render controls / media to the user -->
+  <audio
+    src="assets/audio/levees.m4a"
+    controls
+    autoplay
+    muted
+  ></audio>
+  <!-- Videos will not autoplay if they are not muted -->
+  <video
+    src="assets/video/demi.mov"
+    autoplay
+    muted
+    controls
+  ></video>
+  <div id="grid">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+    <div>4</div>
+    <div>5</div>
+  </div>
+  <div id="grid-space">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+    <div>4</div>
+    <div>5</div>
+    <div>6</div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,32 @@
+audio, video {
+  display: none;
+}
+
+div > div {
+  border: thin solid red;
+}
+ 
+#grid {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 100px 50px;
+}
+
+/* Children can have starting and ending rows / column */
+
+#grid-space {
+  display: grid;
+  grid-template-columns: 50px 50px;
+  grid-template-rows: 50px 100px 50px;
+  gap: 10px;
+  margin: 20px auto;
+  width: 300px;
+}
+
+#third {
+  background-color: yellow;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
