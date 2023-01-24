@@ -1,0 +1,123 @@
+body{
+    background-color: #F1F0CC;
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+    width:auto;
+    justify-content: center;
+    margin:10px;
+}
+header{
+    display: flex;
+    border: thin solid black;
+    width: 90%;
+    justify-content: center;
+    margin:auto;
+    margin-top: 3px;
+    background-color: rgba(213, 191, 134, .7);
+
+}
+
+.header h1{
+    padding: 10px;
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+    font-size: 3rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgba(63, 13, 18);
+    
+}
+
+#results-summary-column{
+    display:flex;
+    background-color: rgba(213, 191, 134, .7);
+    flex-direction: column;
+    width:30%;
+    height:auto;
+    border: thin solid black;
+}
+
+#product-section {
+    margin: 20px;
+    width: 70%;
+    justify-content: center;
+    justify-content: space-between;
+}
+
+h2 {
+    display: inline-block;
+    justify-content: center;
+    padding: .5rem;
+    text-align: center;
+    width: 100%;
+    color: rgba(63, 13, 18);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: larger;
+}
+
+#products{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#products img{
+    display: flex;
+    border: thick black solid;
+    border-radius: 20%;
+    width: 25%;
+    height: 25%;
+}
+
+#intro-paragraph{
+    display: flex;
+    justify-content: center;
+    margin:20px;   
+}
+
+#intro-paragraph p{
+    text-indent: 1rem;
+    word-spacing: normal;
+    letter-spacing: normal;
+    line-height: 1.5rem;
+}
+
+#button-container{
+    display:flex;
+    justify-content: center;
+    padding:1rem;
+    
+}
+
+button {
+    background-color: rgb(242, 218, 157);
+    border-radius: 10%;
+    color: rgba(63, 13, 18);
+}
+
+button:hover {
+    background-color: #B19B73;
+}
+#view-results{
+    width:50px;
+    height:30px;
+    margin: 5px;
+    font-size: small;
+    word-spacing: normal;
+    line-height: normal;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+    text-align: left;
+}
+
+ul li {
+    padding:.25rem;
+}
