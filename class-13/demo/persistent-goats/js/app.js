@@ -83,7 +83,7 @@ function renderGoats() {
   img1.src = state.allGoats[index1].url;
   img2.src = state.allGoats[index2].url;
   img1.name = state.allGoats[index1].name;
-  img2.name = state.allGoats[index1].name;
+  img2.name = state.allGoats[index2].name;
 
   state.currentGoats[0] = index1;
   state.currentGoats[1] = index2;
