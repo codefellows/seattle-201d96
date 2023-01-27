@@ -18,6 +18,7 @@ function Pokemon(name, type, imageUrl) {
 }
 Pokemon.prototype.render = function(element) {
   // append a div to our pokedex, with image / name / type
+  let containerEl = document.createElement('div');
   let imageEl = document.createElement('img');
   imageEl.src= this.imageUrl;
   let nameEl = document.createElement('p');
@@ -25,9 +26,10 @@ Pokemon.prototype.render = function(element) {
   let typeEl = document.createElement('p');
   typeEl.textContent = this.type;
 
-  element.appendChild(imageEl);
-  element.appendChild(nameEl);
-  element.appendChild(typeEl);
+  containerEl.appendChild(imageEl);
+  containerEl.appendChild(nameEl);
+  containerEl.appendChild(typeEl);
+  element.appendChild(containerEl);
 };
 
 // this throws an error when no no formEl is present in the HTML
