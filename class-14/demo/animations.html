@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    main {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    header {
+      width: 100%;
+    }
+    .title {
+      display: inline-block;
+      position: relative;
+      width: 100px;
+      left:0;
+      transition: 1s ease-in-out;
+    }
+    .title.right {
+      position: relative;
+      display: inline-block;
+      width: 100px;
+      /* left: calc(100% - 100px); */
+      /* transition: 1s ease-in-out; */
+      animation-duration: 2s;
+      animation-name: moveRight;
+      /* animation-iteration-count: infinite; */
+    }
+
+    button {
+      height: 50px;
+      width: 100px;
+      transition: 1s;
+    }
+
+    button:hover {
+      height: 100px;
+      width: 200px;
+      transition: 500ms ease-in-out 500ms;
+      /* transition-delay: 500ms; */
+    }
+    span {
+      margin: 100px;
+      position: relative;
+    }
+
+    /* KeyFrames -defines a set of animations */
+    @keyFrames moveRight {
+      0% {
+        left: 0;
+      }
+      25% {
+        left: calc(50% - 100px);
+        color: red;
+      }
+      75%{
+        left: 0;
+        color: red;
+      }
+      100% {
+        left: calc(100% - 100px);
+        color: black;
+      }
+    }
+
+  </style>
+</head>
+<body>
+  <header>
+    <h1 class="title">CSS Animation!</h1>
+    <span>Move Me!</span>
+  </header>
+  <main>
+    <div>
+      <button id="animate-title">Animate Me!</button>
+    </div>
+  </main>
+  <script>
+    const buttonEl = document.getElementById('animate-title');
+
+    buttonEl.addEventListener('click', function() {
+      let titleEl = document.querySelector('.title');
+      titleEl.classList += " right";
+    })
+
+  </script>
+</body>
+</html>

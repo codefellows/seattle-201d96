@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pokemon Form</title>
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="pokedex.html">Pokedex!!</a>
+    </nav>
+  </header>
+  <form id="pokemon-form">
+    <fieldset>
+      <legend>Add Pokemon to your Pokedex</legend>
+      <div class="form-input">
+        <label for="name">Pokemon Name</label>
+        <input id="name" type="text" name="pokemonName" />
+      </div>
+      <div class="form-input">
+        <label for="type">Type</label>
+        <input id="type" type="text" name="pokemonType" />
+      </div>
+      <div class="form-input">
+        <label for="image-url">Pokemon Image</label>
+        <input id="image-url" type="text" name="pokemonImage" />
+      </div>
+      <button type="submit">Create Pokemon</button>
+    </fieldset>
+  </form>
+  <script src="js/app.js"></script>
+</body>
+</html>
